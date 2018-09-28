@@ -1,0 +1,13 @@
+<% include partials/head.ejs %>
+<% include partials/header.ejs %>
+<main role="main">
+	<section>
+        <h1><%= title %></h1>
+        <% results.forEach(result => { %>
+            <h2><%= result.navn %></h2>
+            <p><%= result.beskrivelse %></p>
+        <% }); %>
+	</section>
+</main>
+<% include partials/footer.ejs %>
+<% include partials/after-footer.ejs %>

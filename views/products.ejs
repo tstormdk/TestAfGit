@@ -1,0 +1,13 @@
+<% include partials/head.ejs %>
+<% include partials/header.ejs %>
+<main role="main">
+	<section>
+        <form action="/produkter/soeg" method="GET">
+                <label for="searchword">Søgeord:</label>
+                <input type="text" name="searchword" id="searchword">
+                <button type="submit">Søg</button>
+        </form>
+	</section>
+</main>
+<% include partials/footer.ejs %>
+<% include partials/after-footer.ejs %>
